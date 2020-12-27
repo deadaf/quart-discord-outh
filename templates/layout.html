@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotient</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}" />
+  </head>
+</html>
+
+<body>
+    <!-- website navbar is start from here -->
+    <nav id="navbar">
+        <div class="logo center"><a href="/index.html">Quotient</a></div>
+        <div class="top-menu center">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li class="green-a"><a href="https://discord.gg/aBM5xz6">Login</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+{% block body %}{% endblock %}
+
+</body>
+
+</html>

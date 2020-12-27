@@ -37,5 +37,4 @@ class DiscordOauth2Client(object):
             "Authorization": "Bearer {}".format(token)
         }
         data = requests.get(url, headers=headers).json()
-
         return data
