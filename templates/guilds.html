@@ -6,6 +6,13 @@
     <title>Quotient</title>
   </head>
   <body>
-    {{glist}}
+    <ul>
+      {%for i in glist %}
+      <li>
+        ID: {{i['id']}}<br />Name: {{i['name']}}<br />Permissions:
+        {{i['permissions']}}<br />Icon: {{i['icon']}}<br />
+      </li>
+      {%endfor %}
+    </ul>
   </body>
 </html>
